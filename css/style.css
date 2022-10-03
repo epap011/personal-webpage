@@ -1,0 +1,86 @@
+
+/* bootstrap's navbar override*/
+.navbar {
+  background-color: #FCF7F3;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+   
+.navbar .navbar-brand {
+  color: #616161;
+  font: size 32px;;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+   
+.navbar .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #e47878;
+}
+   
+.navbar .navbar-nav > li > a {
+  color: #414141;
+}
+   
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {  
+  color: #e47878;   
+}
+   
+.navbar .navbar-nav > li > .dropdown-menu {   
+  background-color: #FCF7F3;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #fae1cc;
+}
+   
+.navbar .navbar-nav > li > .dropdown-menu > li > a {
+  color: #363636;
+}
+   
+.navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar .navbar-nav > li > .dropdown-menu > li > a:focus {
+  background-color: #ffffff;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+  border-color: #363636;
+  color: #e47878;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,20,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Home section styling*/
+.home-container {
+  background-color: #FCF7F3;
+  height: 100vh;
+}
+
+.hello-message-box {
+  background-color: #FFEDC0;
+  height: 150px;
+  width : 500px;
+  border: 4px solid black;
+}
+
+img {
+  width: 80px;
+}
+
+/*About section styling*/
+.about-container {
+  background-color: #FFEDDC;
+  height: 300px;
+}
+
+.about-box {
+  background-color: #FCF7F3;
+  border: 4px solid black;
+  height: 100px;
+  width : 600px;
+}
+
+
+@media (max-width: 767.98px) {
+  
+}
