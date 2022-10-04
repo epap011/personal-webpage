@@ -50,11 +50,18 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,20,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+img {
+  width: 80px;
+  height: 80px;
+}
+
 /*Home section styling*/
 .home-container {
   background-color: #FCF7F3;
   height: 100vh;
   padding-top: 58px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .hello-message-box {
@@ -62,16 +69,22 @@
   height: 150px;
   width : 500px;
   border: 4px solid black;
+  margin-top: 40px;
 }
 
-img {
-  width: 80px;
+.scroll-down-arrow {
+  position: absolute;
+  top: 85%;
+  left: 50%;
 }
 
 /*About section styling*/
 .about-container {
   background-color: #FFEDDC;
-  height: 300px;
+  height: 2000px;
+  text-align: center;
+  justify-content: center;
+  scroll-margin-top: 58px; /*that's because of home's section padding-top*/
 }
 
 .about-box {
@@ -79,9 +92,4 @@ img {
   border: 4px solid black;
   height: 100px;
   width : 600px;
-}
-
-
-@media (max-width: 767.98px) {
-  
 }
