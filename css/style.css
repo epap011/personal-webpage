@@ -54,6 +54,7 @@
 .home-container {
   background-color: #FCF7F3;
   height: 100vh;
+  padding-top: 58px;
 }
 
 .hello-message-box {
