@@ -3,8 +3,9 @@
 
 <head>
     <title>Efthymis Papageorgiou</title>
-    <meta name="description" content="efthymis's personal web page">
     <meta name="author" content="Papageorgiou Efthymios">
+    <meta name="description" content="efthymis's personal web page">
+    <meta name="keywords" content="efthymis papageorgiou, personal web page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -30,13 +31,13 @@
                             My Interests
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">skata 1</a></li>
-                            <li><a class="dropdown-item" href="#">skata 2</a></li>
-                            <li><a class="dropdown-item" href="#">skata 3</a></li>
+                            <li><a class="dropdown-item" href="#">Music</a></li>
+                            <li><a class="dropdown-item" href="#">Board Games</a></li>
+                            <li><a class="dropdown-item" href="#">Hiking</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
+                        <a class="nav-link" href="#footer-section">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -44,96 +45,97 @@
     </nav>
 
     <!-- Home Section-->
-    <section class="container-fluid home-container">
-        <h1><i>Hi, i'm Efthymis!</i></h1>
-        <div class="row justify-content-center">
-            <div class="col me-image">
-                <img class="circular-image" src="resources/images/me.png" alt="it's me, efthymios" width="200" height="200">
+    <section id="home-section">
+        <div class="container-fluid">
+            <h1><i><mark>Hi, i'm Efthymis!</mark></i></h1>
+            <div class="row justify-content-center">
+                <div id="profile-image" class="col">
+                    <img class="circular-image" src="resources/images/me.png" alt="it's me, efthymios" width="200" height="200">
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4 hello-message-box">
-                <p>
-                    Hi friend, for the full experience of reading my bio, take a chill pill, make a green-tea and relax.
-                </p>
+            <div class="row justify-content-center">
+                <div id="hello-message-box" class="col-4">
+                    <p> Hi friend, for the full experience of reading my bio, take a chill pill, make a green-tea and relax.</p>
+                </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <audio controls>
+                        <source src="resources/audio/pokemon-gen4-night.mp3" type="audio/mpeg">
+                    </audio>
+                    <p> <i>listen to this as long as you reading..</i> </p>
+                </div>  
+            </div>
+            <a id="scroll-down-arrow" class="d-flex" href="#about-section">
+                <img src="resources/images/scroll-down-icon.png" alt="scroll down arrow image" width="70" height="70"/>
+            </a>
         </div>
-        <div class="d-flex justify-content-center p-2">
-            <div class="col">
-                <audio controls>
-                    <source src="resources/audio/pokemon-gen4-night.mp3" type="audio/mpeg">
-                </audio>
-                <p> <i>listen to this as long as you reading..</i> </p>
-            </div>  
-        </div>
-        <a class="d-flex scroll-down-arrow" href="#about-section">
-            <img src="resources/images/scroll-down-icon.png" width="70" height="70"/>
-        </a>
     </section>
 
     <!-- About Section-->
-    <section id="about-section" class="container-fluid about-container">
-        <h1>About me</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                <img class="about-image" src="resources/images/necronomicon.png" alt="it's me, efthymios" width="200" height="200">
-            </div>
-            <div class="col-md-6 about-box">
-                <p>
-                    So, my name is Efthymis Papageorgiou<br>
-                    I am an undergraduate student at Computer Science Department of University of Crete 
-                    with interests in cloud computing, distributed systems, distributed computing, services and software engineering.
-                    Beyond the science stuff, i'm a big fan of Tolkien's & Lovecraft's world. <br><br>
+    <section id="about-section">
+        <div class="container-fluid">
+            <h1><mark>About me</mark></h1>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="about-section-image" src="resources/images/necronomicon.png" alt="it's me, efthymios" width="200" height="200">
+                </div>
+                <div id="about-box" class="col-4">
+                    <p>
+                        So, my name is Efthymis Papageorgiou<br>
+                        I am an undergraduate student at Computer Science Department of University of Crete 
+                        with interests in cloud computing, distributed systems, distributed computing, services and software engineering.
+                        Beyond the science stuff, i'm a big fan of Tolkien's & Lovecraft's world. <br><br>
 
-                    <i>Elen sila lumenn omentilmo</i>
-                </p>
-            </div>
-            <div class="col-md-3">
-                <img class="about-image" src="resources/images/ring.png" alt="it's me, efthymios" width="200" height="200">
+                        <i>Elen sila lumenn omentilmo</i>
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="about-section-image" src="resources/images/ring.png" alt="it's me, efthymios" width="200" height="200">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- My-Work Section -->
-    <section id="mywork-section" class="container-fluid mywork-container">
-        <h1>My Work</h1>
-        <div style="margin-top: 50px;">
+    <section id="mywork-section">
+        <div class="container-fluid">
+            <h1><mark>My Work</mark></h1>
+        
             <h2>CSD Projects</h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-3 project-card">
-                <img src="resources/images/amphipolis.jpg" alt="amphipolis" width="81" height="81">
-                <div class="project-card-summary">
-                    <h6>Amphipolis Game</h6>
-                    <a href="#">check on github</a>
+            <div class="row justify-content-center">
+                <div class="col-3 project-card">
+                    <img src="resources/images/amphipolis.jpg" alt="amphipolis" width="81" height="81">
+                    <div class="project-card-summary">
+                        <h6>Amphipolis Game</h6>
+                        <a href="#">check on github</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-3 project-card">
-                <img src="resources/images/among_us.jpg" alt="among us" width="81" height="81">
-                <div class="project-card-summary">
-                    <h6>Among Us Game</h6>
-                    <a href="#">check on github</a>
+                <div class="col-3 project-card">
+                    <img src="resources/images/among_us.jpg" alt="among us" width="81" height="81">
+                    <div class="project-card-summary">
+                        <h6>Among Us Game</h6>
+                        <a href="#">check on github</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-3 project-card">
-                <img src="resources/images/web_server_team_project.png" alt="a distributed system" width="81" height="81">
-                <div class="project-card-summary">
-                    <h6>Distributed System</h6>
-                    <a href="#">check on github</a>
+                <div class="col-3 project-card">
+                    <img src="resources/images/web_server_team_project.png" alt="a distributed system" width="81" height="81">
+                    <div class="project-card-summary">
+                        <h6>Distributed System</h6>
+                        <a href="#">check on github</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-3 project-card">
-                <img src="resources/images/credit_card_company.png" alt="credit card company" width="81" height="81">
-                <div class="project-card-summary">
-                    <h6>Credit Card Company</h6>
-                    <a href="#">check on github</a>
+                <div class="col-3 project-card">
+                    <img src="resources/images/credit_card_company.png" alt="credit card company" width="81" height="81">
+                    <div class="project-card-summary">
+                        <h6>Credit Card Company</h6>
+                        <a href="#">check on github</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div style="margin-top: 50px;">
-            <h2>Personal Projects</h2>
-        </div>
+        <h2>Personal Projects</h2>
         <div class="row justify-content-center">
             <div class="col-3 project-card">
                 <img src="resources/images/game_of_life_project.png" alt="game of life" width="81" height="81">
@@ -152,39 +154,39 @@
         </div>
     </section>
 
-    <footer class="footer-section">
+    <!-- Footer Section -->
+    <footer id="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div>
-                        <h4>Mail me</h4>
-                        <a href = "mailto: papageorgiou.efthymis@protonmail.com">papageorgiou.efthymis@protonmail.com   </a>
-                    </div>
+                    <h4>Mail me</h4>
+                    <a href = "mailto: papageorgiou.efthymis@protonmail.com">papageorgiou.efthymis@protonmail.com</a>
                 </div>
                 <div class="col">
-                    <div>
-                        <h4>Follow me</h4>
-                        <a href="#"><img src="resources/images/linkedin.png" width="30px" height="30px"></img></a>
-                        <a href="#"><img src="resources/images/facebook.png" width="30px" height="30px"></img></a>
-                        <a href="#"><img src="resources/images/instagram.png" width="30px" height="30px"></img></a>
-                    </div>
+                    <h4>Follow me</h4>
+                    <a href="#"><img src="resources/images/github.png" alt="github" width="30px" height="30px"></img></a>
+                    <a href="#"><img src="resources/images/linkedin.png" alt="linkedin" width="30px" height="30px"></img></a>
+                    <a href="#"><img src="resources/images/facebook.png" alt="facebook" width="30px" height="30px"></img></a>
+                    <a href="#"><img src="resources/images/instagram.png" alt="instagram" width="30px" height="30px"></img></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" rel="noopener">
+                        <img src="resources/images/share.png" width="22px" height="22px" alt="Share on Facebook">
+                        share on Facebook
+                    </a>                    
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col">
-                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-                        <a href="#">Efthymis Papageogiou</a>.
+                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved
                 </div>
-
             </div>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

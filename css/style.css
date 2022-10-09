@@ -1,4 +1,17 @@
-/* bootstrap's navbar override*/
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+mark {
+  background-color: #e47878;
+  border: 4px solid #363636;
+}
+
+/*---Bootstrap's Navbar override Section---*/
 .navbar {
   background-color: #FCF7F3;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -6,7 +19,7 @@
    
 .navbar .navbar-brand {
   color: #616161;
-  font: size 32px;;
+  font: size 32px;
   font-family:'Times New Roman', Times, serif;
   font-weight: bolder;
 }
@@ -27,7 +40,7 @@
   background-color: #FCF7F3;
   border-radius: 10px;
   border-width: 2px;
-  border-color: #fae1cc;
+  border-color: #e47878;
 }
    
 .navbar .navbar-nav > li > .dropdown-menu > li > a {
@@ -36,11 +49,11 @@
    
 .navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar .navbar-nav > li > .dropdown-menu > li > a:focus {
-  background-color: #ffffff;
+  background-color: #FFEDDC;
 }
 
 .navbar-toggler {
-  background-color: #ffffff;
+  background-color: #FFEDDC;
   border-color: #363636;
   color: #e47878;
 }
@@ -49,7 +62,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,20,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.me-image {
+#profile-image {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -61,55 +74,60 @@
   border-bottom-left-radius: 50% 50%; 
 }
 
-/*Home section styling*/
-.home-container {
+/*---Home Section---*/
+#home-section {
   background-color: #FCF7F3;
   height: 100vh;
+  margin-top: 50px;
   padding-top: 58px;
   text-align: center;
-  margin-top: 50px;
 }
 
-.hello-message-box {
+#hello-message-box {
   background-color: #FFEDC0;
   height: 100px;
   width : 500px;
-  border: 4px solid black;
   padding-top: 20px;
+  margin-bottom: 10px;
+  border: 4px solid black;
 }
 
-.scroll-down-arrow {
+#scroll-down-arrow {
   position: absolute;
   top: 90%;
   left: 51%;
   transform: translate(-51%,0);
 }
 
-/*About section styling*/
-.about-container {
+/*---About Section---*/
+#about-section {
   background-color: #FFEDDC;
   height: 850px;
   text-align: center;
   justify-content: center;
   scroll-margin-top: 58px; /*that's because of home's section padding-top*/
+  padding-top: 20px;
 }
 
-.about-box {
-  background-color: #FCF7F3;
+#about-box {
+  background-color: #FFEDC0;
   border: 4px solid black;
-  height: 200px;
+  height: 220px;
   width : 550px;
+  padding-top: 20px;
   margin-top: 50px;
   overflow: auto;
 }
 
-.about-image {
+.about-section-image {
   margin-top: 50px;
 }
 
-.mywork-container {
+/*---My-Work Section---*/
+#mywork-section {
   background-color: #FCF7F3;
   height: 1000px;
+  padding-top: 20px;
   scroll-margin-top: 58px; /*that's because of home's section padding-top*/
   justify-content: center;
   text-align: center;
@@ -131,6 +149,7 @@
   margin-top: 10px;
 }
 
-.footer-section {
+/*---Footer Section---*/
+#footer-section {
   background-color: #FFEDDC;
 }
