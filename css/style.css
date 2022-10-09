@@ -109,7 +109,7 @@
 
 .mywork-container {
   background-color: #FCF7F3;
-  height: 2000px;
+  height: 1000px;
   scroll-margin-top: 58px; /*that's because of home's section padding-top*/
   justify-content: center;
   text-align: center;
@@ -129,4 +129,8 @@
 .project-card-summary {
   margin-left: 15px;
   margin-top: 10px;
+}
+
+.footer-section {
+  background-color: #FFEDDC;
 }
