@@ -3,17 +3,35 @@
 
 <head>
     <title>Efthymis Papageorgiou</title>
-    <meta name="author" content="Papageorgiou Efthymios">
+    
+    <meta name="author"      content="Papageorgiou Efthymios">
     <meta name="description" content="efthymis's personal web page">
-    <meta name="keywords" content="efthymis papageorgiou, personal web page">
+    <meta name="keywords"    content="efthymis papageorgiou, personal web page">
+    <meta name="viewport"    content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Efthymis Papageorgiou" />
+    <meta property="og:description"   content="this is my personal website" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <!-- Navigation Section-->
     <nav class="navbar fixed-top navbar-expand-md">
         <div class="container-fluid">
@@ -31,9 +49,10 @@
                             My Interests
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Music</a></li>
-                            <li><a class="dropdown-item" href="#">Board Games</a></li>
-                            <li><a class="dropdown-item" href="#">Hiking</a></li>
+                            <li><a class="dropdown-item" href="#interests-music-section">Music</a></li>
+                            <li><a class="dropdown-item" href="#interests-board_games-section">Board Games</a></li>
+                            <li><a class="dropdown-item" href="#interests-useful_links-section">Useful Articles</a></li>
+                            <li><a class="dropdown-item" href="#interests-useful_links-section">Hobbies</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -47,7 +66,7 @@
     <!-- Home Section-->
     <section id="home-section">
         <div class="container-fluid">
-            <h1><i><mark>Hi, i'm Efthymis!</mark></i></h1>
+            <h1><i><mark class="red-mark">Hi, i'm Efthymis!</mark></i></h1>
             <div class="row justify-content-center">
                 <div id="profile-image" class="col">
                     <img class="circular-image" src="resources/images/me.png" alt="it's me, efthymios" width="200" height="200">
@@ -75,7 +94,7 @@
     <!-- About Section-->
     <section id="about-section">
         <div class="container-fluid">
-            <h1><mark>About me</mark></h1>
+            <h1><mark class="red-mark">About me</mark></h1>
             <div class="row justify-content-center">
                 <div class="col">
                     <img class="about-section-image" src="resources/images/necronomicon.png" alt="it's me, efthymios" width="200" height="200">
@@ -85,13 +104,23 @@
                         So, my name is Efthymis Papageorgiou<br>
                         I am an undergraduate student at Computer Science Department of University of Crete 
                         with interests in cloud computing, distributed systems, distributed computing, services and software engineering.
-                        Beyond the science stuff, i'm a big fan of Tolkien's & Lovecraft's world. <br><br>
+                        Beyond the science stuff, i'm a big fan of 
+                        <abbr title="Creator of Middle Earth">Tolkien's</abbr> & 
+                        <abbr title="Creator of Cthulhu Mythos">Lovecraft's</abbr> world.
 
-                        <i>Elen sila lumenn omentilmo</i>
+                        <blockquote cite="www.geeksforgeeks.org"><i>Don't forget, <kbd>tab</kbd> > spaces</i></blockquote>
                     </p>
                 </div>
                 <div class="col">
                     <img class="about-section-image" src="resources/images/ring.png" alt="it's me, efthymios" width="200" height="200">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <video width="450" height="340" controls>
+                        <source src="resources/video/yugioh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
                 </div>
             </div>
         </div>
@@ -100,67 +129,196 @@
     <!-- My-Work Section -->
     <section id="mywork-section">
         <div class="container-fluid">
-            <h1><mark>My Work</mark></h1>
+            <h1><mark class="red-mark">My Work</mark></h1>
         
-            <h2>CSD Projects</h2>
+            <h2><mark class="yellow-mark">CSD Projects</mark></h2>
             <div class="row justify-content-center">
                 <div class="col-3 project-card">
                     <img src="resources/images/amphipolis.jpg" alt="amphipolis" width="81" height="81">
                     <div class="project-card-summary">
                         <h6>Amphipolis Game</h6>
-                        <a href="#">check on github</a>
+                        <a class="special" href="#" target="_blank">check on github</a>
                     </div>
                 </div>
                 <div class="col-3 project-card">
                     <img src="resources/images/among_us.jpg" alt="among us" width="81" height="81">
                     <div class="project-card-summary">
                         <h6>Among Us Game</h6>
-                        <a href="#">check on github</a>
+                        <a class="special" href="#" target="_blank">check on github</a>
                     </div>
                 </div>
                 <div class="col-3 project-card">
                     <img src="resources/images/web_server_team_project.png" alt="a distributed system" width="81" height="81">
                     <div class="project-card-summary">
                         <h6>Distributed System</h6>
-                        <a href="#">check on github</a>
+                        <a class="special" href="#" target="_blank">check on github</a>
                     </div>
                 </div>
                 <div class="col-3 project-card">
                     <img src="resources/images/credit_card_company.png" alt="credit card company" width="81" height="81">
                     <div class="project-card-summary">
                         <h6>Credit Card Company</h6>
-                        <a href="#">check on github</a>
+                        <a class="special" href="#" target="_blank">check on github</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2>Personal Projects</h2>
+        <h2><mark class="yellow-mark">Personal Projects</mark></h2>
         <div class="row justify-content-center">
             <div class="col-3 project-card">
                 <img src="resources/images/game_of_life_project.png" alt="game of life" width="81" height="81">
                 <div class="project-card-summary">
                     <h6>Conway's Game of Life</h6>
-                    <a href="#">check on github</a>
+                    <a class="special" href="#" target="_blank">check on github</a>
                 </div>
             </div>
             <div class="col-3 project-card">
                 <img src="resources/images/pdf_tool_project.png" alt="pdf tool" width="81" height="81">
                 <div class="project-card-summary">
                     <h6>PDF Converter Tool</h6>
-                    <a href="#">check on github</a>
+                    <a class="special" href="#" target="_blank">check on github</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- My-Interests Section  -->
+    <section id="interests-section">
+        <div class="container-fluid">
+            
+            <h1><mark class="red-mark">My Interests</mark></h1>
+
+            <section id="interests-music-section">
+                <h2><mark class="yellow-mark">Music</mark></h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <table>
+                            <tr>
+                                <th>Favorite Band</th>
+                                <th>Favorite Song</th>
+                                <th>Youtube Link</th>
+                            </tr>
+                            <tr>
+                                <td>Opeth</td>
+                                <td>Master's Apprentices</td>
+                                <td><a class="special" href="https://www.youtube.com/watch?v=IB8mXWa-VgU" target="_blank">live version</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Gojira</td>
+                                <td>Rememberance</td>
+                                <td><a class="special"href="https://www.youtube.com/watch?v=uyvMND1EVzc" target="_blank">live version</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sepultura</td>
+                                <td>Attitude</td>
+                                <td><a class="special" href="https://www.youtube.com/watch?v=5osE37vpM6U" target="_blank">live version</a></td>
+                            </tr>
+                            <tr>
+                                <td>Tool</td>
+                                <td>Sober</td>
+                                <td><a class="special" href="https://www.youtube.com/watch?v=u7lweNCCwS0" target="_blank">live version</a></td>
+                            </tr>
+                            <tr>
+                                <td>Linkin Park</td>
+                                <td>A place for my head</td>
+                                <td><a class="special" href="https://www.youtube.com/watch?v=sgCbmIq1ydE" target="_blank">live version</a></td>
+                            </tr>
+                            <tr>
+                                <td>Dream Thearer</td>
+                                <td>The Alien</td>
+                                <td><a class="special" href="https://www.youtube.com/watch?v=Ztif0kN6htQ" target="_blank">live version</a></td>
+                            </tr>
+                        </table> 
+                    </div>
+                    <div class="col-md-5">
+                        <iframe width="560" height="295" src="https://www.youtube.com/embed/suG-c_i2fBQ" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interests-board_games-section">
+                <h2><mark class="yellow-mark">Board Games</mark></h2>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <figure>
+                                <img src="resources/images/dnd.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <figcaption>Fig.1: Dungeons & Dragons board game</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4">
+                            <figure>
+                                <img src="resources/images/cthulhu.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <figcaption>Fig.2: Reign of Cthulhu board game</figcaption>
+                            </figure> 
+                        </div>
+                        <div class="col-md-4">
+                            <figure>
+                                <img src="resources/images/dixit.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <figcaption>Fig.3: Dixit board game</figcaption>
+                            </figure> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interests-useful_articles-section">
+                <h2><mark class="yellow-mark">Useful Articles</mark></h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4">
+                            <article class="article-box">
+                                <h4>Ridesharing Algorithms: Optimization and Iteration</h4>
+                                <a class="special" href="https://www.codecademy.com/article/cf-cs-ridesharing" target="_blank">An article that explores ridesharing algorithms.</a>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article class="article-box">
+                                <h4>HTTP Requests</h4>
+                                <a class="special" href="https://www.codecademy.com/article/wix-http-requests" target="_blank">Understand the basics of how your web browser communicates with the internet. </a>
+                            </article class="article-box">
+                        </div>
+                        <div class="col-4">
+                            <article class="article-box">
+                                <h4>MVC Architecture for Full-Stack App</h4>
+                                <a class="special" href="https://www.codecademy.com/article/mvc-architecture-for-full-stack-app" target="_blank">Build the connections between the Model, View, and Controller of an expense tracker application.</a>
+                            </article> 
+                        </div>
+                    </div>
+                </div>       
+            </section>
+
+            <section id="interests-hobbies-section">
+                <h2><mark class="yellow-mark">Hobbies</mark></h2>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <ol>
+                                <li>Board Games </li>
+                                <li>Running </li>
+                                <li>Listening to music</li>
+                                <li>Learning to play piano</li>
+                                <li>Learning to play guitar</li>
+                                <li>Coding</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer id="footer-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <h4>Mail me</h4>
-                    <a href = "mailto: papageorgiou.efthymis@protonmail.com">papageorgiou.efthymis@protonmail.com</a>
+                    <a class="special" href = "mailto: papageorgiou.efthymis@protonmail.com">papageorgiou.efthymis@protonmail.com</a>
                 </div>
                 <div class="col">
                     <h4>Follow me</h4>
@@ -170,10 +328,10 @@
                     <a href="#"><img src="resources/images/instagram.png" alt="instagram" width="30px" height="30px"></img></a>
                 </div>
                 <div class="col">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" rel="noopener">
-                        <img src="resources/images/share.png" width="22px" height="22px" alt="Share on Facebook">
-                        share on Facebook
-                    </a>                    
+                    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small">
+                        <a class="special" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
+                        class="fb-xfbml-parse-ignore">Share on Facebook</a>
+                    </div>                   
                 </div>
             </div>
             <hr>
@@ -187,6 +345,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
 
 </html>
