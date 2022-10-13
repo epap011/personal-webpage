@@ -51,8 +51,8 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#interests-music-section">Music</a></li>
                             <li><a class="dropdown-item" href="#interests-board_games-section">Board Games</a></li>
-                            <li><a class="dropdown-item" href="#interests-useful_links-section">Useful Articles</a></li>
-                            <li><a class="dropdown-item" href="#interests-useful_links-section">Hobbies</a></li>
+                            <li><a class="dropdown-item" href="#interests-useful_articles-section">Useful Articles</a></li>
+                            <li><a class="dropdown-item" href="#interests-hobbies-section">Hobbies</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -96,10 +96,10 @@
         <div class="container-fluid">
             <h1><mark class="red-mark">About me</mark></h1>
             <div class="row justify-content-center">
-                <div class="col">
+                <div class="col-md-3">
                     <img class="about-section-image" src="resources/images/necronomicon.png" alt="it's me, efthymios" width="200" height="200">
                 </div>
-                <div id="about-box" class="col-4">
+                <div id="about-box" class="col-md-6">
                     <p>
                         So, my name is Efthymis Papageorgiou<br>
                         I am an undergraduate student at Computer Science Department of University of Crete 
@@ -111,7 +111,7 @@
                         <blockquote cite="www.geeksforgeeks.org"><i>Don't forget, <kbd>tab</kbd> > spaces</i></blockquote>
                     </p>
                 </div>
-                <div class="col">
+                <div class="col-md-3">
                     <img class="about-section-image" src="resources/images/ring.png" alt="it's me, efthymios" width="200" height="200">
                 </div>
             </div>
@@ -233,7 +233,7 @@
                         </table> 
                     </div>
                     <div class="col-md-5">
-                        <iframe width="560" height="295" src="https://www.youtube.com/embed/suG-c_i2fBQ" frameborder="0" 
+                        <iframe id="youtube-iframe" src="https://www.youtube.com/embed/roABNwbjZf4" frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -243,21 +243,21 @@
                 <h2><mark class="yellow-mark">Board Games</mark></h2>
                 <div class="container-fluid">
                     <div class="row justify-content-center">
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <figure>
-                                <img src="resources/images/dnd.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <img class="responsive-board-game-image" src="resources/images/dnd.png" alt="scroll down arrow image"/>
                                 <figcaption>Fig.1: Dungeons & Dragons board game</figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <figure>
-                                <img src="resources/images/cthulhu.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <img class="responsive-board-game-image" src="resources/images/cthulhu.png" alt="scroll down arrow image"/>
                                 <figcaption>Fig.2: Reign of Cthulhu board game</figcaption>
                             </figure> 
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <figure>
-                                <img src="resources/images/dixit.png" alt="scroll down arrow image" width="400" height="300"/>
+                                <img class="responsive-board-game-image" src="resources/images/dixit.png" alt="scroll down arrow image"/>
                                 <figcaption>Fig.3: Dixit board game</figcaption>
                             </figure> 
                         </div>
@@ -269,22 +269,42 @@
                 <h2><mark class="yellow-mark">Useful Articles</mark></h2>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <article class="article-box">
                                 <h4>Ridesharing Algorithms: Optimization and Iteration</h4>
                                 <a class="special" href="https://www.codecademy.com/article/cf-cs-ridesharing" target="_blank">An article that explores ridesharing algorithms.</a>
                             </article>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <article class="article-box">
                                 <h4>HTTP Requests</h4>
                                 <a class="special" href="https://www.codecademy.com/article/wix-http-requests" target="_blank">Understand the basics of how your web browser communicates with the internet. </a>
                             </article class="article-box">
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <article class="article-box">
                                 <h4>MVC Architecture for Full-Stack App</h4>
                                 <a class="special" href="https://www.codecademy.com/article/mvc-architecture-for-full-stack-app" target="_blank">Build the connections between the Model, View, and Controller of an expense tracker application.</a>
+                            </article> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <article class="article-box">
+                                <h4>Building Projects with VS Code</h4>
+                                <a class="special" href="https://www.codecademy.com/article/building-projects-with-vs-code" target="_blank">Use Visual Studio Code in your local environment and create an HTML website.</a>
+                            </article>
+                        </div>
+                        <div class="col-sm-4">
+                            <article class="article-box">
+                                <h4>Binary Application Attacks</h4>
+                                <a class="special" href="https://www.codecademy.com/article/binary-application-attacks" target="_blank">Learn about attacks that target binary applications, often via memory manipulation. </a>
+                            </article class="article-box">
+                        </div>
+                        <div class="col-sm-4">
+                            <article class="article-box">
+                                <h4>Cache Eviction Policies</h4>
+                                <a class="special" href="https://www.codecademy.com/article/cache-eviction-policies" target="_blank">Learn about how to keep the most relevant data inside of a cache.</a>
                             </article> 
                         </div>
                     </div>
@@ -316,18 +336,19 @@
     <footer id="footer-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-6">
                     <h4>Mail me</h4>
                     <a class="special" href = "mailto: papageorgiou.efthymis@protonmail.com">papageorgiou.efthymis@protonmail.com</a>
                 </div>
-                <div class="col">
+                <div class="col-sm-4">
                     <h4>Follow me</h4>
                     <a href="#"><img src="resources/images/github.png" alt="github" width="30px" height="30px"></img></a>
                     <a href="#"><img src="resources/images/linkedin.png" alt="linkedin" width="30px" height="30px"></img></a>
                     <a href="#"><img src="resources/images/facebook.png" alt="facebook" width="30px" height="30px"></img></a>
                     <a href="#"><img src="resources/images/instagram.png" alt="instagram" width="30px" height="30px"></img></a>
                 </div>
-                <div class="col">
+                <div class="col-sm-2">
+                    <h4>Share</h4>
                     <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small">
                         <a class="special" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
                         class="fb-xfbml-parse-ignore">Share on Facebook</a>
