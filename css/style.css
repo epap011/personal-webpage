@@ -19,6 +19,8 @@ h4 {
 
 ol {
   font-size: larger;
+  display: inline-block;
+  text-align: left;
 }
 
 table {
